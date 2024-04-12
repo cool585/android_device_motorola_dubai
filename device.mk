@@ -37,7 +37,7 @@ $(call inherit-product, device/motorola/sm7325-common/sm7325.mk)
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResDubai \
-    ArrowSystemUIDubai \
+    AospSystemUIDubai \
     NfcResDubai \
     SettingsResDubai \
     SettingsProviderResDubai \
@@ -45,7 +45,7 @@ PRODUCT_PACKAGES += \
     WifiResDubai
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-arrow
+    $(LOCAL_PATH)/overlay-aosp
 
 # Audio
 PRODUCT_COPY_FILES += \

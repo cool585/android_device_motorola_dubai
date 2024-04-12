@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from dubai device
 $(call inherit-product, device/motorola/dubai/device.mk)
 
-# Inherit some common ArrowOS stuff.
+# Inherit some common PixelBuilds stuff.
+$(call inherit-product, vendor/pb/config/common_full_phone.mk)
+WITH_GMS := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_PIXEL_CHARGER := true
-$(call inherit-product, vendor/arrow/config/common.mk)
 
-PRODUCT_NAME := arrow_dubai
+PRODUCT_NAME := aosp_dubai
 PRODUCT_DEVICE := dubai
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
@@ -36,8 +36,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=dubai_g \
-    PRIVATE_BUILD_DESC="dubai_g-user 13 T1RD33.116-33-3 a0c97-f829db release-keys"
+    PRIVATE_BUILD_DESC="dubai_g-user 13 T1RD33.116-33-3 fe936 c0109 release-keys"
 
-BUILD_FINGERPRINT := motorola/dubai_g/dubai:13/T1RD33.116-33-3/a0c97-f829db:user/release-keys
-
-DEVICE_MAINTAINER := Adithya (ghostrider_reborn)
+BUILD_FINGERPRINT := motorola/dubai_g/dubai:11/T1RD33.116-33-5/fe936-c0109:user/release-keys

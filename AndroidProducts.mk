@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_dubai.mk
+    $(LOCAL_DIR)/aosp_dubai.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_dubai-user \
-    arrow_dubai-userdebug \
-    arrow_dubai-eng
+    aosp_dubai-user \
+    aosp_dubai-userdebug \
+    aosp_dubai-eng
